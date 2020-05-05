@@ -1,4 +1,4 @@
-# app-eletron
+# Vue/Eletron
 
 ## Project setup
 ```
