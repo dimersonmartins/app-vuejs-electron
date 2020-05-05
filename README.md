@@ -1,4 +1,4 @@
-# app-eletron
+# Vue/Eletron
 
 ## Project setup
 ```
@@ -20,5 +20,14 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Electron
+
+### Debug project
+```
+npm run electron:serve
+```
+
+### Build project
+```
+npm run electron:build
+```
