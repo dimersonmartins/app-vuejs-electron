@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # electron build output
-.dist_electron/
+dist_electron/
