@@ -21,7 +21,7 @@ npm run lint
 ```
 
 ## Electron
-```
+
 ### Debug project
 ```
 npm run electron:serve
@@ -30,3 +30,4 @@ npm run electron:serve
 ### Build project
 ```
 npm run electron:build
+```
