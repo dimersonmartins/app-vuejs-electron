@@ -2,10 +2,10 @@
   <div class="divContainer">
        <div class="main">
         <p class="sign" align="center">Sign in</p>
-        <form class="form1">
-        <input class="un " type="text" align="center" placeholder="email">
-        <input class="pass" type="password" align="center" placeholder="password">
-        <a class="submit" align="center">Sign in</a>  
+        <form class="form1" @submit.prevent="login">
+        <input class="un" type="text" align="center" v-model="user.email" placeholder="email" />
+        <input class="pass" type="password" align="center" v-model="user.password" placeholder="password" />
+        <button class="submit" align="center">Sign in</button>  
         </form>   
         </div>
   </div>
@@ -13,7 +13,22 @@
 
 <script>
 export default {
+    data(){
+        return {
+            user :{
+                email : 'tom@c.com',
+                password : '123456'
+            }
+        }
+    },
 
+    methods:{
+        login(){
+            localStorage.setItem('user-token', '123456');
+            this.$router.push('/');
+        }
+    }
+    
 }
 </script>
 
@@ -108,7 +123,7 @@ export default {
         padding-top: 15px;
     }
     
-    a {
+    button {
         text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
         color: #E1BEE7;
         text-decoration: none

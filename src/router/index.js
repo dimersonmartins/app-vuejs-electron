@@ -8,8 +8,7 @@ Vue.use(VueRouter)
 const ifAuthenticated = (to, from, next) =>
 {
   const user_auth = localStorage.getItem('user-token');
-  const user_permissions = localStorage.getItem('user-permission');
-  if (user_auth !== null && user_auth !== "" && user_permissions !== null && user_permissions !== "" )
+  if (user_auth !== null && user_auth)
   {
     next();
     return

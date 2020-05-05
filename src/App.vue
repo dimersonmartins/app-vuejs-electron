@@ -8,3 +8,13 @@
     <router-view/>
   </div>
 </template>
+<script>
+export default {
+  methods:{
+    
+  },
+  created(){
+     localStorage.removeItem('user-token');
+  }
+}
+</script>
