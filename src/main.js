@@ -7,8 +7,6 @@ import 'element-ui/lib/theme-chalk/index.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import WebCam from 'vue-web-cam'
-Vue.use(WebCam)
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
