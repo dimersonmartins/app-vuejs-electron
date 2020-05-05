@@ -30,4 +30,3 @@ npm run electron:serve
 ### Build project
 ```
 npm run electron:build
-```
