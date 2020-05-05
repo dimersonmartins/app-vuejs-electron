@@ -20,9 +20,16 @@ npm run build
 npm run lint
 ```
 
-### Run Electron
+## Electron
+```
+### Debug project
 ```
 npm run electron:serve
+```
+
+### Build project
+```
+npm run electron:build
 ```
 
 ### Customize configuration
