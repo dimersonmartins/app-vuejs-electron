@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '@/components/Login'
+import DashboardRouter from '@/router/DashboardRouter'
 
 Vue.use(VueRouter)
 
@@ -29,7 +30,7 @@ const routes = [
     beforeEnter : ifAuthenticated,
     children:
     [
-      //,
+      DashboardRouter,
     ]
 
   },

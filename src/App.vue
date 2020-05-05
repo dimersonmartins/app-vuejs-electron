@@ -12,9 +12,6 @@
 export default {
   methods:{
     
-  },
-  created(){
-     localStorage.removeItem('user-token');
   }
 }
 </script>
